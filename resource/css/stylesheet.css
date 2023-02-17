@@ -17,6 +17,10 @@
   --scroll-bar-color: #b9c1c6;
 }
 
+.topbar {
+  padding-top: 2px;
+  padding-bottom: 7px;
+}
 .topbar-container, .headerbar, .topbar-white, .search-vocab-text {
   background-color: var(--dark-color);
 }
@@ -28,9 +32,24 @@
   color: #fff !important;
 }
 
-footer {
-  background: #6c757d;
+img.bartoc-link { height: 1.2em; }
+
+ul.list-inline > li.list-inline-item:not(:last-child)::after {
+  content: "\A0|\A0";
+  color: #ddd;
+}
+footer ul.list-inline > li.list-inline-item:not(:last-child)::after {
   color: #6c757d;
+}
+ul.list-inline > li.list-inline-item:not(:last-child) {
+  margin-right: 0;
+}
+
+#footer { display: none }
+footer, footer > .container {
+  background: #343a40;
+  padding-bottom: 55px;
+  padding-top: 5px;
 }
 footer a {
   color: #fff;
